@@ -1,6 +1,6 @@
 {
   "name": "@citrus327/bem-namer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simplified version of BEM name generator",
   "publishConfig": {
     "access": "public"
