@@ -1,7 +1,7 @@
 {
-  "name": "@citrus327/my-ts-lib",
+  "name": "@citrus327/bem-namer",
   "version": "0.0.0",
-  "description": "My awesome typescript library",
+  "description": "A simplified version of BEM name generator",
   "publishConfig": {
     "access": "public"
   },

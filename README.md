@@ -1,23 +1,26 @@
-# @citrus327/array-partition
+# @citrus327/bem-namer
 
-![Download](https://img.shields.io/npm/dw/@citrus327/array-partition)
-![Version](https://img.shields.io/npm/v/@citrus327/array-partition)
+![Download](https://img.shields.io/npm/dw/@citrus327/bem-namer)
+![Version](https://img.shields.io/npm/v/@citrus327/bem-namer)
 
-partition an array into two.
-
+A simplified version of BEM name generator
 
 ## Installation
 
 ```sh
-pnpm install @citrus327/array-partition
+pnpm install @citrus327/bem-namer
 ```
 
 ## Usage
 
 ```ts
-const arr = [1, 2, 3, 4, 5, 6]
-const [target, rest] = partition(arr, (o) => o % 2 === 0)
+import { bem } from '@citrus327/bem-namer';
 
-expect(target).toEqual([2, 4, 6])
-expect(rest).toEqual([1, 3, 5])
+const { b, m } = bem("user-card")
+
+expect(b()).toBe("user-card")
+expect(b("container")).toBe("user-card-container")
+expect(m("primary")).toBe("user-card--primary")
+expect(m("container", "primary")).toBe("user-card-container--primary")
+
 ```
