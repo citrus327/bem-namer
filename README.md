@@ -3,7 +3,7 @@
 ![Download](https://img.shields.io/npm/dw/@citrus327/bem-namer)
 ![Version](https://img.shields.io/npm/v/@citrus327/bem-namer)
 
-A simplified version of BEM name generator
+A simplified version of BEM class name generator
 
 ## Installation
 
